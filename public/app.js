@@ -15,7 +15,7 @@ window.onmousemove = function(e) {
 var locs = [];
 
 function setup() {
-  createCanvas(windowWidth, windowHeight);
+  createCanvas(windowWidth, document.body.scrollHeight);
 
   frameRate(60);
 
