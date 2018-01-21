@@ -1,4 +1,5 @@
 let tooltipSpan1;
+let posn;
 
 document.addEventListener("DOMContentLoaded", () => {
   tooltipSpan1 = document.getElementById("tooltip-span1");
@@ -16,6 +17,8 @@ var locs = [];
 
 function setup() {
   createCanvas(windowWidth, document.body.scrollHeight);
+  posn = createVector(width/2,height/2); 
+  console.log(posn);
 
   frameRate(60);
 
@@ -37,6 +40,9 @@ function setup() {
   //stroke(0,255,90); //matrix green
 }
 
+function calcVec(x, y) {
+  return new p5.Vector(y - x, -x - y);
+}
 function draw() {
   //background(30, 67, 137);
   //background(0,249,201); // turq
@@ -44,7 +50,7 @@ function draw() {
   background(0, 0, 0);
 
   for (var i = locs.length - 1; i >= 0; i--) {
-    var h = calcVec(locs[i].x - mouseX, locs[i].y - mouseY);
+    var h = calcVec(locs[i].x - posn.x, locs[i].y - posn.y);
     line(
       locs[i].x,
       locs[i].y,
@@ -54,9 +60,19 @@ function draw() {
   }
 } // move on mouse
 
-function calcVec(x, y) {
-  return new p5.Vector(y - x, -x - y);
+function mouseMoved(){
+  posn.x = mouseX;
+  posn.y = mouseY;
+  console.log("mouse moved", posn)
+  return false;
 }
+
+// function deviceMoved() {
+//   posn.x = accelerationX;
+//   posn.y = accelerationY;
+//   console.log("device moved", posn)
+// }
+
 
 function windowResized() {
   resizeCanvas(windowWidth, document.body.scrollHeight);
