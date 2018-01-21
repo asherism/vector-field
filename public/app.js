@@ -59,5 +59,5 @@ function calcVec(x, y) {
 }
 
 function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
+  resizeCanvas(windowWidth, document.body.scrollHeight);
 }
