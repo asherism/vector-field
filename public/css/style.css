@@ -217,7 +217,6 @@ a {
   color: rgb(100,169,107);
   text-decoration: none;
   line-height: 30px;
-  padding: 5px 0;
   font-weight: 600;
 }
 a span {
@@ -234,7 +233,8 @@ a:hover span {
   z-index: 1;
 }
 .work {
-  color: orangered
+  color: orangered;
+  padding-top: 20px;
 }
 
 em {
