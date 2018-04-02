@@ -67,7 +67,7 @@ function draw() {
 function mouseMoved(){
   posn.x = mouseX;
   posn.y = mouseY;
-  console.log("mouse moved", posn)
+  // console.log("mouse moved", posn)
   return false;
 }
 
