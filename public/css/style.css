@@ -237,6 +237,10 @@ a:hover span {
   padding-top: 20px;
 }
 
+.item {
+  margin-bottom: 15px;
+}
+
 em {
   font-style: italic;
 }
