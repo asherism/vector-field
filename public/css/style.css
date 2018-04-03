@@ -238,7 +238,7 @@ a:hover span {
 }
 
 .item {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 em {
@@ -255,6 +255,7 @@ a:hover {
 p {
   color: white;
   font-family: "IBM Plex Mono";
+  margin-bottom: 0px;
 }
 
 .test {
