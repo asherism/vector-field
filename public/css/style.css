@@ -185,7 +185,7 @@ canvas {
   font-style: italic;
   line-height: 24px;
   display: flex;
-  margin: 6px 0;
+  margin: 0 0 6px 0;
 }
 
 .links span {
