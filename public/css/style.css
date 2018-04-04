@@ -200,13 +200,13 @@ canvas {
 }
 
 .links ul li {
-  color: palegreen;
+  color: purple;
   flex-basis: auto;
   display: flex;
   justify-content: center;
   border-radius: 2px;
   /* border: 1.5px solid lightblue; */
-  background-color:slategray;
+  background-color:gold;
   margin-right: 15px;
   font-size: 10px;
   padding: 4px;
@@ -215,7 +215,7 @@ canvas {
 
 a {
   font-family: "IBM Plex Mono";
-  color: rgb(100,169,107);
+  color: orangered;
   text-decoration: none;
   line-height: 30px;
   font-weight: 600;
